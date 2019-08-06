@@ -30,7 +30,7 @@ def scrape_table(root):
 # # scrape_and_look_for_next_link function: calls the scrape_table function
 def scrape_and_look_for_next_link(url):
     html = scraperwiki.scrape(url)
-#     print html
+    print html
     root = lxml.html.fromstring(html)
 # define the variable you plan to put into the scrape_table function as its argument (the actual "filling" e.g. custard or jam)
     scrape_table(root)
